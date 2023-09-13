@@ -1,0 +1,221 @@
+.section.course {
+    background-color: #def0f2;
+    padding: 20px;
+    text-align: center; /* Center content in the .course section */
+  }
+  
+  .course-title {
+    color: #007bff;
+  }
+  
+  .course-details {
+    list-style-type: square;
+    color: #333;
+    text-align: center; /* Reset text alignment for list items */
+  }
+  
+  .practice-heading {
+    text-align: center;
+    color: #ff5722;
+  }
+  
+  h2 {
+    color: #4caf50;
+  }
+  
+  ol {
+    
+    list-style-type: none;
+    margin-left: 0;
+    
+    
+    text-align:left; 
+    /* Reset text alignment for list items */
+  }
+  
+  ol li {
+    color: #070707;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #9c27b0;
+  }
+  
+  
+    .table-container {
+        display: table;
+        border-collapse: collapse;
+        width: 700px;
+        margin: auto;
+      }
+      
+      .row {
+        display: table-row;
+      }
+      
+      .cell {
+        display: table-cell;
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+      }
+      
+      .column1 {
+        background-color: #ffcc00;
+      }
+      
+      .column2 {
+        background-color: #66cc66;
+      }
+      
+      .row:nth-child(1) {
+        background-color: #070707;
+      }
+      
+      .row:nth-child(2) {
+        background-color: #66a3ff;
+      }
+      
+      .row:nth-child(3) {
+        background-color: #ff9933;
+      }
+      
+      .row:nth-child(4) {
+        background-color: #33cccc;
+      }
+      
+      .row:nth-child(5) {
+        background-color: #cc66cc;
+      }
+      
+      .row:nth-child(6) {
+        background<div class="table-container">
+        <div class="row">
+          <div class="cell column1">Row 1, Column 1</div>
+          <div class="cell column2">Row 1, Column 2</div>
+        </div>
+        <div class="row">
+          <div class="cell column1">Row 2, Column 1</div>
+          <div class="cell column2">Row 2, Column 2</div>
+        </div>
+        <div class="row">
+          <div class="cell column1">Row 3, Column 1</div>
+          <div class="cell column2">Row 3, Column 2</div>
+        </div>
+        <div class="row">
+          <div class="cell column1">Row 4, Column 1</div>
+          <div class="cell column2">Row 4, Column 2</div>
+        </div>
+        <div class="row">
+          <div class="cell column1">Row 5, Column 1</div>
+          <div class="cell column2">Row 5, Column 2</div>
+        </div>
+        <div class="row">
+          <div class="cell column1">Row 6, Column 1</div>
+          <div class="cell column2">Row 6, Column 2</div>
+        </div>
+        <div class="row">
+          <div class="cell column1">Row 7, Column 1</div>
+          <div class="cell column2">Row 7, Column 2</div>
+        </div>
+      </div>-color: #99cc66;
+      }
+      
+      .row:nth-child(7) {
+        background-color: #6666ff;
+      }
+  
+  .colorful-container {
+    background-color: #03a9f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .colorful-heading {
+    color: #ffffff;
+  }
+  
+  .colorful-text {
+    color: #f0f0f0;
+  }
+  
+  .colorful-container h1 {
+    color: #ffeb3b;
+  }
+  
+  ul, ol {
+    text-align: center; /* Center content in unordered and ordered lists */
+    margin-top: 20px;
+    
+  }
+  
+  ul li {
+    color: #e91e63;
+  }
+  
+  ol li {
+    color: #673ab7;
+  }
+  
+  /* Responsive CSS for smaller screens */
+  @media (max-width: 768px) {
+    .section.course {
+      padding: 10px;
+    }
+  
+    .practice-heading {
+      font-size: 18px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    ol li {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .cell {
+      padding: 5px;
+    }
+  
+    .colorful-container {
+      padding: 10px;
+    }
+  
+    .colorful-heading {
+      font-size: 18px;
+    }
+  
+    .colorful-text {
+      font-size: 14px;
+    }
+  
+    .colorful-container h1 {
+      font-size: 18px;
+    }
+  
+    ul, ol {
+      margin-top: 10px;
+    }
+  
+    ul li {
+      font-size: 14px;
+    }
+  
+    ol li {
+      font-size: 14px;
+    }
+  }
+  

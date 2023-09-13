@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      background-color: #a4f6f2;
+    }
+    section {
+      background-color: rgb(98, 177, 195);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex; /* Added */
+    }
+    .image-container {
+      flex: 0 0 40%; /* Adjust the width of the image container */
+      padding-right: 20px;
+    }
+    .text-container {
+      flex: 1; /* Takes up remaining space */
+    }
+    h2 {
+      color: #333;
+      font-size: 36px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+      visibility: visible;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="image-container">
+      <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2FIMG-20230831-WA0022.jpg?alt=media&token=4cb55c9a-218d-4d21-ad43-c643ce0b82b2"alt="Profile Picture">
+    </div>
+    <div class="text-container">
+      <h2>About Me</h2>
+      <p id="about-me-text"></p>
+    </div>
+  </section>
+  <script>
+    const textElement = document.querySelector('#about-me-text');
+    const words = " Hello! I (AK Sharma) is a renowned steno faculty. I have been selected at Indira Gandhi University (2019) as a stenographer. I will share my steno skills experience on this platform. With the help of my innovative ideas of completing entire steno syllabus, you can complete your steno course for any Govt. Exam. If you would like to connect or have any queries regarding online classes or syllabus. Please contact at (stcsharmaji@gmail.com) Business Whatsapp (8697420314),(9068000314).</p> ".split(' ');
+    textElement.textContent = '';
+    let i = 0;
+    function printNextWord() {
+      if (i < words.length) {
+        textElement.innerHTML += words[i] + ' ';
+        i++;
+        setTimeout(printNextWord, 200); // adjust delay time here
+      }
+    }
+    printNextWord();
+  </script>
+</body>
+</html>
