@@ -16,12 +16,12 @@
 
           <ul class="menu_items">
             <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Fpng-transparent-hamburger-button-computer-icons-menu-bar-line-thumbnail.png?alt=media&token=a61a3184-5c56-4c48-bdf2-e7cfd3e6eb8f" alt="timesicon" id="menu_toggle" />
-            <li><a href="index.html" class="nav_link">Home</a></li>
+            <li><a href="#home" class="nav_link">Home</a></li>
             <li><a href="index2.html" class="nav_link">About</a></li>
             <li><a href="index6.html" class="nav_link">Service</a></li>
-            <li><a href="index03.html" class="nav_link">course</a></li>
+            <li><a href="indeex.html" class="nav_link">course</a></li>
             <li><a href="index1.html" class="nav_link">features</a></li>
-            <li><a href="index5.html" class="nav_link">Contact</a></li>
+            <li><a href="indeccon.html" class="nav_link">contacts</a></li>
           </ul>
           <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Fpng-transparent-hamburger-button-computer-icons-menu-bar-line-thumbnail.png?alt=media&token=a61a3184-5c56-4c48-bdf2-e7cfd3e6eb8f" alt="timesicon" id="menu_toggle" />
         </nav>
@@ -61,5 +61,336 @@
         toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
       });
     </script>
+
+<section id="about" class="section about">
+  <div class="image-container">
+      <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/SAVE_20230913_164920.jpg?alt=media&token=73a478ab-3cbe-4756-b6a4-123b5ad1648d"alt="Profile Picture">
+    </div>
+    <div class="text-container">
+      <h2>About Me</h2>
+      <p id="about-me-text"></p>
+    </div>
+  </section>
+  <script>
+    const textElement = document.querySelector('#about-me-text');
+    const words = " Hello! I (AK Sharma) is a renowned steno faculty. I have been selected at Indira Gandhi University (2019) as a stenographer. I will share my steno skills experience on this platform. With the help of my innovative ideas of completing entire steno syllabus, you can complete your steno course for any Govt. Exam. If you would like to connect or have any queries regarding online classes or syllabus. Please contact at (stcsharmaji@gmail.com) Business Whatsapp (8697420314),(9068000314) .</p> ".split(' ');
+    textElement.textContent = '';
+    let i = 0;
+    function printNextWord() {
+      if (i < words.length) {
+        textElement.innerHTML += words[i] + ' ';
+        i++;
+        setTimeout(printNextWord, 200); // adjust delay time here
+      }
+    }
+    printNextWord();
+  </script>
+</section>
+
+<section id="servicess" class="section servicess">
+  <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <ul class="carousel">
+        <li class="card">
+          <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2FIMG-20230831-WA0019.jpg?alt=media&token=c8b16729-e349-4eaa-8e01-e66152326114" alt="img" draggable="false"></div>
+          <h2>Kundan kumar gupta</h2>
+          <span>Stenographer</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2FIMG-20230831-WA0018.jpg?alt=media&token=3ad42062-66ae-4301-afb2-acad75518926" alt="img" draggable="false"></div>
+          <h2>Omkar kumar sahu</h2>
+          <span>Stenographer</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Fyoung-bussinessman-stock-images.jpg?alt=media&token=49779a1c-8065-4f94-b5aa-c7af554d6e57" alt="img" draggable="false"></div>
+          <h2>Manish Singh</h2>
+          <span>Stenographer</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Findian-business-man-smiling.jpg?alt=media&token=df20b294-5127-47b5-a656-d23ad2cb99cb" alt="img" draggable="false"></div>
+          <h2>Rajan Singh</h2>
+          <span>Stenographer</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Fbusinessman-portrait-happy-confident-young-businessman-standing-arms-crossed-smiling.jpg?alt=media&token=21c049a9-c350-4105-aec6-2e5e719e63aa" alt="img" draggable="false"></div>
+          <h2>Manish singh </h2>
+          <span>Stenographer</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2FIMG_20230829_010804.jpg?alt=media&token=26a91738-79ef-41e0-a215-d49e43edc6f9" alt="img" draggable="false"></div>
+          <h2>Aditya Raj</h2>
+          <span>Stenographer</span>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    <script>
+      const wrapper = document.querySelector(".wrapper");
+const carousel = document.querySelector(".carousel");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper i");
+const carouselChildrens = [...carousel.children];
+
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+// Get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add("no-transition");
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+btn.addEventListener("click", () => {
+  carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+});
+});
+
+const dragStart = (e) => {
+isDragging = true;
+carousel.classList.add("dragging");
+// Records the initial cursor and scroll position of the carousel
+startX = e.pageX;
+startScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+if(!isDragging) return; // if isDragging is false return from here
+// Updates the scroll position of the carousel based on the cursor movement
+carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+isDragging = false;
+carousel.classList.remove("dragging");
+}
+
+const infiniteScroll = () => {
+// If the carousel is at the beginning, scroll to the end
+if(carousel.scrollLeft === 0) {
+  carousel.classList.add("no-transition");
+  carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+  carousel.classList.remove("no-transition");
+}
+// If the carousel is at the end, scroll to the beginning
+else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+  carousel.classList.add("no-transition");
+  carousel.scrollLeft = carousel.offsetWidth;
+  carousel.classList.remove("no-transition");
+}
+
+// Clear existing timeout & start autoplay if mouse is not hovering over carousel
+clearTimeout(timeoutId);
+if(!wrapper.matches(":hover")) autoPlay();
+}
+
+const autoPlay = () => {
+if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+// Autoplay the carousel after every 2500 ms
+timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
+    </script>
+</section>
+
+<section id="course" class="section course">
+  <div class="container">
+    <h1> <b>"Consistency is Our Moto"</b></h1>
+      <h2 class="course-title">Manak Hindi Steno Course</h2>
+      <ul class="course-details">
+        <li>Duration: 2 months</li>
+        
+      </ul>
+    </div>
+    <div class="container">
+      <h2 class="course-title">Pitman English Steno Course</h2>
+      <ul class="course-details">
+        <li>Duration: 3/4 months</li>
+      </ul>
+    </div>
+    <h1 class="practice-heading"><u>Steno depends on the practice of the students</u></h1>
+    <h2>Speed Dictation Matter.</h2>
+    <ol>
+      <li><p>Monthly Magazine Dictation</p><p>160 WPN.</p></li>
+<li><p>Parliament speech Dictation</p><p>150 WPM</p></li>
+<li><p>President Speech Dictation</p><p>140 WPM</p></li>
+<li><p>Current Matter Dictation</p><p>130 WPM</p></li>
+<li><p>Previous Year Dictation</p><p>120 WPM</p></li>
+<li><p>Monthly M. Dictation</p><p>110 WPM</p></li>
+<li><p>K.Chandra Dictation</p><p>100 WPM</p></li>
+<li><p>Newspaper Dictation</p><p>90 WPM</p></li>
+<li><p>2000 Dictation</p><p>80 WPM</p></li>
+<li><p>700 Dictation</p><p>70 WPM</p></li>
+    </ol>
+    
+    <h1><b>Target</b></h1>
+    <div class="table-container">
+      <div class="row">
+        <div class="cell column1">All Center Level  <BR>STENO BATCH</BR></div>
+        <div class="cell column2">All state Level <BR>STENO BATCH</BR> </div>
+      </div>
+      <div class="row">
+        <div class="cell column1">SSC C/D <BR>STENO BATCH</BR></div>
+        <div class="cell column2">P.& H. High Court, <BR>STENO BATCH</BR></div>
+      </div>
+      <div class="row">
+        <div class="cell column1">Supreme Court <br>STENO BATCH</div>
+        <div class="cell column2">Patna High Court <br>STENO BATCH</div>
+      </div>
+      <div class="row">
+        <div class="cell column1">Parliament Reporter  <br>STENO BATCH</div>
+        <div class="cell column2">Allahabad High Court<br>STENO BATCH</div>
+      </div>
+      <div class="row">
+        <div class="cell column1">ISRO <br> STENO BATCH</div>
+        <div class="cell column2">Himachal Pradesh <br>STENO BATCH</div>
+      </div>
+      <div class="row">
+        <div class="cell column1">DRDO <br> STENO BATCH</div>
+        <div class="cell column2">Raj. Jodhpur H.Court <br>STENO BATCH</div>
+      </div>
+      <div class="row">
+        <div class="cell column1">K.V.S <br> STENO BATCH</div>
+        <div class="cell column2">Rajasthan RPSC <BR>STENO BATCH</BR></div>
+      </div>
+    </div>
+    <div class="colorful-container">
+      <div class="inner-content">
+        <h2 class="colorful-heading">"Gain Clarity on STENO and START STENO Preparation with my Youtube Channel Videos!"</h2>
+        <p class="colorful-text">These Video will definitely </p>
+        <p>provide you all a clear view about Steno preparation and we need  to prepare well with focus and strong will.</p>
+        <p>"success comes to those who try again to again. To get success work hard with consistency!"</p>
+        <h1><b>(हम भी दरिया हैं हमें अपना हुनर मालूम है, जिस तरफ भी चल पड़ेंगे रास्ता हो जाएगा! आप का जज्बा अगर मजबूत हो तो फिर आप जहां भी जाएंगे रास्ता बनता जाएगा।)</b></h1>
+      </div>
+      </div>
+      <ul>
+        <li><b>Make your own Decision</b></li>
+      </ul>
+      
+        <h3>Discipline </h3>
+        <h3>Integrity</h3>
+        <h3>Patience</h3>
+      </ol>
+</section>
+
+<section id="features" class="section features">
+  <div class="colorful-container">
+      <div class="inner-content">
+        <h2 class="colorful-heading">Hello Dear Students........</h2>
+        <p class="colorful-text">Here I want to tell you all that,</p>
+        <p>our online classes going to start regarding steno and as we know that this group was created for the steno aspirants so those who all want to kick start their preparation for stenography, massage me persnally and share your ideas regarding your preparation that what you actually want in your online classes !!</p>
+  
+        <h1><b>"बना हुआ स्टेनोग्राफर सब को पसंद आएगा मगर बनता हुआ नही"</b></h1>
+        <h1><b>"अगर मेहनत आदत बन जाती है तो सफलता मुक़द्दर बन जाती है"</b></h1>
+        <h1><b>"कोई लक्ष्य इन्सान के साहस से बड़ा नहीं, और हारा वही इन्सान जो लड़ा नहीं"</b></h1>
+      </div>
+    </div>
+</section>
+
+<section id="contacts" class="section contacts">
+<div class="section-header">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>For any queries, Please reach out to us. Our Support team will get back to you within 24 hours.</p>
+  </div>
+</div>
+
+<div class="containers">
+  <div class="rows">
+    
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="contact-info-content">
+          <h4>Address</h4>
+          <p>Shop No.16 To 20,<br/> Gulab Devi Complex, Ist floor opp.Bus Stand Narnaul Distt.  <br/>Mahendergarh(HARYANA 123001)</p>
+        </div>
+      </div>
+      
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        
+        <div class="contact-info-content">
+          <h4>Phone</h4>
+          <p>+91 9068000314</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        
+        <div class="contact-info-content">
+          <h4>Email</h4>
+         <p>Stcsharmaji@gmail.com</p>
+        </div>
+      </div>
+    </div> 
+    <div class="contact-form">
+      <form action="" id="contact-form">
+        <h2>Send Message</h2>
+        <div class="input-box">
+          <input type="text" required="true" name="">
+          <span>Full Name</span>
+        </div>
+        
+        <div class="input-box">
+          <input type="email" required="true" name="">
+          <span>Email</span>
+        </div>
+        
+        <div class="input-box">
+          <textarea required="true" name=""></textarea>
+          <span>Type your Message...</span>
+        </div>
+        
+        <div class="input-box">
+          <input type="submit" value="Send" name="">
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</div>
+<script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+</section>
+<section id="follow " class="section follow">
+  <h1>Follow us</h1>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100095091302775&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/channel/UCepsz7Yj7QjkhHEC2DT_S5A" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/stcsharmajii" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCepsz7Yj7QjkhHEC2DT_S5A" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100095091302775&mibextid=ZbWKwL" target="_blank"><i class="fab fa-telegram"></i></a>
+  </div>
+  <p>&copy; 2023 Your sharmatype & steno institute narnaul. All rights reserved.</p>
+</section>
+</body>
+</html>
+
+
   </body>
 </html>

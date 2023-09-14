@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 main {
-  background: #0c0c0cf0;
+  background: #000000;
 }
 .container {
   max-width: 1300px;
@@ -41,25 +41,19 @@ a {
 }
 
 /* Hero */
-
-/* Assuming the edited image is named "transparent-image.png" */
- .hero {
+.hero {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background: url(images/bg-dot.png), url(images/bg-dot.png), url(images/bg-round.png), url(images/bg-tree.png);
+  background: url(https://png.pngtree.com/png-clipart/20190921/original/pngtree-vector-cartoon-boy-studying-png-image_4741135.jpg/bg-dot.png), url(https://png.pngtree.com/png-clipart/20190921/original/pngtree-vector-cartoon-boy-studying-png-image_4741135.jpg/bg-dot.png), url(https://png.pngtree.com/png-clipart/20190921/original/pngtree-vector-cartoon-boy-studying-png-image_4741135.jpg/bg-round.png), url(https://png.pngtree.com/png-clipart/20190921/original/pngtree-vector-cartoon-boy-studying-png-image_4741135.jpg/bg-tree.png);
   background-position: 10px 10px, bottom 215px right 10px, left 55% top -1%, left 45% bottom -1px;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.94); /* Adjust the alpha value to control transparency */
 }
 .curveImg {
   position: absolute;
   bottom: 0;
   width: 100%;
   pointer-events: none;
-}
-marquee{
-    color:white;
 }
 .hero .row {
   display: flex;
@@ -181,7 +175,7 @@ marquee{
     background-color: rgb(98, 177, 195);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(11, 9, 9, 0.3);
     max-width: 1500px;
     margin: 0 auto;
     display: flex; /* Added */
@@ -235,7 +229,7 @@ marquee{
     line-height: 50px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
   }
