@@ -134,6 +134,12 @@
     align-items: center;
     margin-top: 10px;
   }
+  .section.follow {
+    text-align: center;
+  }
+  .section.follow h1 {
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
   
   .social-icons a {
     color: #161313;
@@ -146,7 +152,9 @@
   .social-icons a:hover {
     color: #ff6600; /* Change to the desired hover color */
   }
-
+  .section.follow p {
+    text-align: center;
+  }
 
   @media (max-width: 991px) {
     section {
