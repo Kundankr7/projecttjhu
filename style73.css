@@ -737,3 +737,23 @@ marquee{
   .icons a {
     text-decoration: none;
   }
+  @media (max-width: 768px) {
+    section {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .contact-info {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  }
+  
