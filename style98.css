@@ -186,22 +186,40 @@
   .icons a {
     text-decoration: none;
   }
-  @media (max-width: 768px) {
-    section {
-      padding-top: 20px;
-      padding-bottom: 40px;
+  @media (max-width: 767px) {
+    .containers {
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   
-    .row {
+    .rows {
       flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
     }
   
-    .contact-info {
-      margin-bottom: 30px;
-      width: 100%;
-    }
-  
+    .contact-info,
     .contact-form {
       width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .contact-info-item {
+      margin-bottom: 20px;
+    }
+  
+    .contact-info-content {
+      margin-left: 0;
+    }
+  
+    .contact-info-icon {
+      margin-right: 10px;
+    }
+  
+    .icons {
+      flex-direction: row;
+      gap: 10px;
     }
   }
+  
